@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'Module-Install-MicroTemplate';
 all_from 'lib/Module/Install/MicroTemplate.pm';
 
-# requires '';
+requires 'Module::Install';
+requires 'Text::MicroTemplate';
 
 tests 't/*.t';
 author_tests 'xt';
